@@ -1,4 +1,11 @@
-export default function Adminhome() {
-    return <h1>Welcome Admin</h1>;
-  }
-  
+import React from 'react'
+
+const Adminhome = () => {
+  return (
+    <div>
+      Admin Home
+    </div>
+  )
+}
+
+export default Adminhome
