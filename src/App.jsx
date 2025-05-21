@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
-import AdminHome from "./pages/AdminHome";
+import AdminHome from "./pages/Adminhome";
 import TeacherHome from "./pages/Teacherhome";
 import StudentHome from "./pages/studenthome";
 import Dashboard from "./pages/Dashboard";
