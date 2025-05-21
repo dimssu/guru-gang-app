@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useAuth } from "../context/Authcontext";
+import { useAuth } from "../context/AuthContext";
 import axios from "../api/axios";
 import { FaBook, FaPlus, FaUsers, FaEdit, FaTrash, FaChalkboardTeacher, FaFileAlt, FaLink, FaArrowUp, FaArrowDown, FaTimes } from "react-icons/fa";
 import "./teacherhome.css";

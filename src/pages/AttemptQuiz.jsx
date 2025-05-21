@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios, { API_URL } from "../api/axios";
 import { useParams, useNavigate } from "react-router-dom";
-import { useAuth } from "../context/Authcontext";
+import { useAuth } from "../context/AuthContext";
 import "./attemptQuiz.css";
 
 const AttemptQuiz = () => {

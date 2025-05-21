@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { useAuth } from "../context/Authcontext";
+import { useAuth } from "../context/AuthContext";
 import axios from "../api/axios";
 import { getSlidesByCourse } from "../api/slides";
 import { markSlideViewed, getCourseProgress } from "../api/progress";

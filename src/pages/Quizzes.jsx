@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios, { API_URL } from "../api/axios";
-import { useAuth } from "../context/Authcontext";
+import { useAuth } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
 import "./quizzes.css";
 

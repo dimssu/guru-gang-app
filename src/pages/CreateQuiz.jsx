@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import axios, { API_URL } from "../api/axios";
-import { useAuth } from "../context/Authcontext";
+import { useAuth } from "../context/AuthContext";
 
 const CreateQuiz = () => {
   const { token } = useAuth();

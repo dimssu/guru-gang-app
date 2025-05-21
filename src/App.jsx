@@ -7,7 +7,7 @@ import TeacherHome from "./pages/Teacherhome";
 import StudentHome from "./pages/studenthome";
 import Dashboard from "./pages/Dashboard";
 import Logout from "./pages/Logout";
-import { AuthProvider, useAuth } from "./context/Authcontext";
+import { AuthProvider, useAuth } from "./context/AuthContext";
 import ResetPassword from './pages/ResetPassword';
 import CreateQuiz from "./pages/CreateQuiz";
 import Quizzes from "./pages/Quizzes";

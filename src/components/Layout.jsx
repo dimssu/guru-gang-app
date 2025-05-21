@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useAuth } from "../context/Authcontext";
+import { useAuth } from "../context/AuthContext";
 import "../styles/Layout.css";
 import { ChatBot } from "dissu-talks/src/components/ChatBot";
 import { FaBars, FaTimes } from "react-icons/fa";
