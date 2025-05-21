@@ -4,7 +4,6 @@ import { API_URL } from './axios';
 // Create axios instance with default config
 const api = axios.create({
   baseURL: API_URL,
-  withCredentials: true, // This is important for handling authentication cookies
   headers: {
     'Content-Type': 'application/json'
   }

@@ -80,8 +80,8 @@ const Layout = ({ children }) => {
       </footer>
       <ChatBot
         directLlmConfig={{
-          apiEndpoint: "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=AIzaSyDiInfo9C5E_vW-MTB-Xkm0BhFzV87dFRs",
-          apiKey: "AIzaSyDiInfo9C5E_vW-MTB-Xkm0BhFzV87dFRs", 
+          apiEndpoint: `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash-latest:generateContent?key=${import.meta.env.VITE_GEMINI_API_KEY}`,
+          apiKey: import.meta.env.VITE_GEMINI_API_KEY, 
           headers: {
             "Content-Type": "application/json"
           },
