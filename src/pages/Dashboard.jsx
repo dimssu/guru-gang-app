@@ -109,7 +109,7 @@ const Dashboard = () => {
     <div className="dashboard-wrapper">
       <header className="dashboard-header">
         <div className="header-content">
-          <h1>Welcome to EduLearn</h1>
+          <h1>Welcome to Guru Gang</h1>
           <p>Your personalized learning journey starts here</p>
           <div className="header-actions">
             <Link to="/courses" className="primary-button">

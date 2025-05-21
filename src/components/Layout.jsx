@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
   
   // Generate dynamic context based on user role
   const generateChatbotContext = () => {
-    const baseContext = `You are a helpful assistant for VirtualLearn, an interactive learning platform. The platform has courses with slides, quizzes, assignments, concept battles, and a focus room for distraction-free studying.`;
+    const baseContext = `You are a helpful assistant for Guru Gang, an interactive learning platform. The platform has courses with slides, quizzes, assignments, concept battles, and a focus room for distraction-free studying.`;
     
     const courseFeatures = `Courses have progress tracking that shows completion percentage as students view slides. Each course has a collection of slides with descriptions and resource links.`;
     
@@ -39,7 +39,9 @@ const Layout = ({ children }) => {
       <header className="main-header">
         <div className="header-container">
           <div className="logo-container">
-            <h1>VIRTUAL LEARN</h1>
+            <h1>
+              <Link to="/student">GURU GANG</Link>
+            </h1>
           </div>
           
           <button className="mobile-menu-btn" onClick={toggleMenu}>
@@ -104,7 +106,7 @@ const Layout = ({ children }) => {
         context={generateChatbotContext()}
         responseType="friendly"
         position="bottom-right"
-        welcomeMessage={`Hello! I'm your VirtualLearn assistant. How can I help you with your ${role === 'student' ? 'learning' : role === 'teacher' ? 'teaching' : 'administration'} today?`}
+        welcomeMessage={`Hello! I'm your Guru Gang assistant. How can I help you with your ${role === 'student' ? 'learning' : role === 'teacher' ? 'teaching' : 'administration'} today?`}
         styling={{ widgetColor: "#4a90e2", textColor: "#ffffff" }}
         theme="light"
         placeholderText="Ask anything..."
