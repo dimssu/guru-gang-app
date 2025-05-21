@@ -1,0 +1,203 @@
+/* frontend/src/pages/conceptBattles.css */
+.battles-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.battles-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.battles-header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.user-stats {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.level-indicator {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #3498db;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.trophy-icon {
+  color: #ffd700;
+}
+
+.points-indicator {
+  background-color: #2ecc71;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.levels-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.level-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.level-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.level-card.locked {
+  opacity: 0.7;
+  background-color: #f5f5f5;
+}
+
+.level-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.level-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #2c3e50;
+}
+
+.difficulty {
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 12px;
+  font-weight: 600;
+}
+
+.difficulty.easy {
+  background-color: #e3fcef;
+  color: #2ecc71;
+}
+
+.difficulty.medium {
+  background-color: #fff5e6;
+  color: #f39c12;
+}
+
+.difficulty.hard {
+  background-color: #fee7e7;
+  color: #e74c3c;
+}
+
+.level-stars {
+  display: flex;
+  gap: 0.3rem;
+  margin-bottom: 1.2rem;
+}
+
+.star {
+  font-size: 1.4rem;
+}
+
+.star.filled {
+  color: #f1c40f;
+}
+
+.star.empty {
+  color: #ddd;
+}
+
+.battle-button {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  background-color: #3498db;
+  color: white;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  transition: background-color 0.2s ease;
+}
+
+.battle-button:hover {
+  background-color: #2980b9;
+}
+
+.locked-message {
+  width: 100%;
+  padding: 0.8rem;
+  text-align: center;
+  background-color: #ecf0f1;
+  color: #7f8c8d;
+  border-radius: 5px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.battles-container.loading,
+.battles-container.error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+  text-align: center;
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+  font-size: 2rem;
+  color: #3498db;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.total-points {
+  font-size: 1.2rem;
+  color: #2ecc71;
+  margin-top: 0.5rem;
+}
+
+.level-up {
+  color: #f39c12;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  animation: bounce 0.5s ease infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}

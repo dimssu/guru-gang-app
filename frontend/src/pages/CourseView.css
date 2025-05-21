@@ -1,0 +1,266 @@
+.course-view-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.course-view-header {
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.course-view-header h1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.course-view-header p {
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.course-content-layout {
+  display: flex;
+  gap: 2rem;
+  min-height: 500px;
+}
+
+/* Sidebar Navigation */
+.slide-navigation {
+  width: 25%;
+  min-width: 250px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-height: 600px;
+  overflow-y: auto;
+  border: 1px solid #e1e1e1;
+}
+
+.slide-navigation h3 {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e1e1e1;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.slides-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.slide-item {
+  padding: 12px 15px;
+  margin-bottom: 5px;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slide-item:hover {
+  background-color: #f0f7ff;
+  border-color: #cce5ff;
+}
+
+.slide-item.active {
+  background-color: #4a90e2;
+  color: white;
+  border-color: #4a90e2;
+  font-weight: 500;
+}
+
+.slide-item.viewed {
+  border-left: 4px solid #4caf50;
+}
+
+.viewed-icon {
+  color: #4caf50;
+  font-size: 14px;
+}
+
+.no-slides-message {
+  color: #888;
+  font-style: italic;
+  padding: 1rem 0;
+}
+
+/* Main Content Area */
+.slide-content {
+  flex: 1;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e1e1e1;
+}
+
+.no-slide-selected {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-style: italic;
+}
+
+.active-slide {
+  height: 100%;
+}
+
+.active-slide h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid #e1e1e1;
+  color: #2c3e50;
+}
+
+.slide-description {
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.slide-description p {
+  margin-bottom: 1rem;
+}
+
+.resource-links-section {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e1e1e1;
+}
+
+.resource-links-section h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.resource-links {
+  list-style: none;
+  padding: 0;
+}
+
+.resource-link {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  padding: 10px 15px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.resource-link:hover {
+  background-color: #f0f7ff;
+}
+
+.link-icon {
+  color: #4a90e2;
+  margin-right: 10px;
+}
+
+.resource-link a {
+  color: #4a90e2;
+  text-decoration: none;
+  flex: 1;
+}
+
+.resource-link a:hover {
+  text-decoration: underline;
+}
+
+/* Loading and Error States */
+.course-view-loading,
+.course-view-error {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  text-align: center;
+}
+
+.spinner {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  animation: spin 1s linear infinite;
+  color: #4a90e2;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.back-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.6rem 1.2rem;
+  margin-top: 1rem;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.back-button:hover {
+  background-color: #3a7bc8;
+}
+
+/* Progress Bar */
+.course-progress-bar {
+  margin-top: 1rem;
+}
+
+.progress-bar-outer {
+  height: 10px;
+  background-color: #e1e1e1;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.progress-bar-inner {
+  height: 100%;
+  background: linear-gradient(to right, #4a90e2, #8ab4f8);
+  border-radius: 5px;
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  display: block;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .course-content-layout {
+    flex-direction: column;
+  }
+
+  .slide-navigation {
+    width: 100%;
+    min-width: 100%;
+    max-height: 300px;
+    margin-bottom: 1rem;
+  }
+} 

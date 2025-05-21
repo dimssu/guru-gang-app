@@ -1,0 +1,99 @@
+.focus-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.focus-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.focus-title {
+  color: #2c3e50;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.focus-subtitle {
+  color: #27ae60;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.video-container {
+  position: relative;
+  margin: 1rem auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 720px;
+}
+
+.focus-video {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+  background-color: #000;
+}
+
+.focus-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+
+.focus-stats {
+  margin-top: 1.5rem;
+  padding: 1rem 1.5rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  font-size: 1.2rem;
+  color: #2c3e50;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.focus-stats:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.focus-time {
+  font-weight: 600;
+  color: #27ae60;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .focus-title {
+    font-size: 1.5rem;
+  }
+  
+  .focus-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .video-container {
+    max-width: 100%;
+  }
+  
+  .focus-stats {
+    font-size: 1rem;
+  }
+}

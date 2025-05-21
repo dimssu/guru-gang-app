@@ -1,0 +1,119 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-form, .forgot-password-form {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  transition: all 0.3s ease;
+}
+
+.login-form:hover, .forgot-password-form:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.login-form h2, .forgot-password-form h2 {
+  color: #333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.login-form input, .forgot-password-form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.login-form input:focus, .forgot-password-form input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.login-form button, .forgot-password-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 0.5rem;
+}
+
+.login-form button:hover, .forgot-password-form button:hover {
+  background-color: #3a7bc8;
+}
+
+.login-form button:disabled, .forgot-password-form button:disabled {
+  background-color: #a0c0e8;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #e74c3c;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.login-links {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.login-link {
+  color: #4a90e2;
+  cursor: pointer;
+  margin: 0.5rem 0;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.login-link:hover {
+  color: #3a7bc8;
+  text-decoration: underline;
+}
+
+.register-link {
+  color: #27ae60;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.register-link:hover {
+  color: #219653;
+  text-decoration: underline;
+}
+
+.back-button {
+  background-color: #95a5a6 !important;
+}
+
+.back-button:hover {
+  background-color: #7f8c8d !important;
+}
+
+@media (max-width: 480px) {
+  .login-form, .forgot-password-form {
+    padding: 1.5rem;
+    width: 90%;
+  }
+}

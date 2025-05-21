@@ -1,0 +1,310 @@
+.assignment-upload-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #2c3e50;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.assignment-upload-header {
+  background: linear-gradient(135deg, #4a90e2 0%, #2c3e50 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.assignment-upload-header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.assignment-upload-header p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.upload-section {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  color: #2c3e50;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.section-title svg {
+  margin-right: 0.5rem;
+  color: #4a90e2;
+}
+
+.file-upload-area {
+  border: 2px dashed #4a90e2;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  background-color: rgba(74, 144, 226, 0.05);
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+.file-upload-area:hover {
+  background-color: rgba(74, 144, 226, 0.1);
+}
+
+.file-upload-area svg {
+  font-size: 3rem;
+  color: #4a90e2;
+  margin-bottom: 1rem;
+}
+
+.file-upload-area p {
+  color: #7f8c8d;
+  margin-bottom: 0.5rem;
+}
+
+.file-upload-area .file-types {
+  font-size: 0.9rem;
+  color: #95a5a6;
+}
+
+.file-input {
+  display: none;
+}
+
+.selected-file {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.file-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: #4a90e2;
+}
+
+.file-info {
+  flex: 1;
+}
+
+.file-name {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.file-meta {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.upload-button {
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.upload-button svg {
+  margin-right: 0.5rem;
+}
+
+.upload-button:hover {
+  background-color: #219653;
+  transform: translateY(-2px);
+}
+
+.upload-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.history-section {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.assignment-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.empty-list {
+  text-align: center;
+  padding: 2rem;
+  color: #7f8c8d;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+}
+
+.assignment-item {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: all 0.3s ease;
+  border-left: 4px solid #4a90e2;
+}
+
+.assignment-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.assignment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.assignment-name {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.assignment-date {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.assignment-meta {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.meta-item svg {
+  margin-right: 0.25rem;
+  font-size: 1rem;
+}
+
+.assignment-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.action-button {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+
+.action-button svg {
+  margin-right: 0.25rem;
+}
+
+.view-button {
+  background-color: #3498db;
+  color: white;
+}
+
+.view-button:hover {
+  background-color: #2980b9;
+}
+
+.download-button {
+  background-color: #27ae60;
+  color: white;
+}
+
+.download-button:hover {
+  background-color: #219653;
+}
+
+.share-button {
+  background-color: #f39c12;
+  color: white;
+}
+
+.share-button:hover {
+  background-color: #e67e22;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .assignment-upload-container {
+    padding: 1rem;
+  }
+  
+  .assignment-upload-header {
+    padding: 1.5rem;
+  }
+  
+  .assignment-upload-header h1 {
+    font-size: 1.8rem;
+  }
+  
+  .assignment-header {
+    flex-direction: column;
+  }
+  
+  .assignment-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .assignment-actions {
+    flex-wrap: wrap;
+  }
+} 
